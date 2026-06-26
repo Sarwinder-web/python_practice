@@ -1,4 +1,4 @@
-def subsets(nums,index,current):
+def subsets(nums,current,index):
     if index==len(nums):
         print(current)
         return 
@@ -6,16 +6,14 @@ def subsets(nums,index,current):
     current.append(nums[index])
     subsets(
         nums,
-        index +1,
-        current
+        current,
+        index + 1
     )
-
     current.pop()
-
     subsets(
         nums,
-        index +1,
-        current
+        current,
+        index + 1
     )
 nums = [1,2,3]
-subsets(nums,0,[])
+subsets(nums,[],0)
