@@ -18,6 +18,8 @@ def subsets(nums,current,index):
         index + 1
     )
     
+nums = [2,4,2]
 
-nums = [2,2,2,3,3]
+nums.sort()
+
 subsets(nums,[],0)

@@ -1,25 +1,22 @@
-def combination_sum(nums,target,index,current):
-
-    if sum(current)==target:
+def combination_sum(nums,current,index,target):
+    if target==0:
         print(current)
-        return 
-    
-    if sum(current)>target:
         return
     
-    if index==len(nums):
+    if  target < 0:
+        return
+    
+    if index == len(nums):
         return
     
     current.append(nums[index])
 
-    combination_sum(nums,target,index,current)
+    combination_sum(nums,current,index,target - nums[index])
 
     current.pop()
 
-    combination_sum(nums,target,index+1,current)
+    combination_sum(nums,current,index + 1, target)
 
-nums = [5,6,9]
-target = 56
-
-combination_sum(nums,target,0,[])
+nums = [1,2,3,4]
+combination_sum(nums,[],0,7)
 
