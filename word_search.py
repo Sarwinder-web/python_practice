@@ -1,1 +1,0 @@
-# DFS (Depth First Search) explores one path completely before coming back and exploring other paths.

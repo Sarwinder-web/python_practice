@@ -23,8 +23,10 @@ def is_ssafe(board,row,col,n):
     
 def solve(board,row,n):
     if row==n:
-        print(board)
-        return
+        for r in board:
+            print(" ".join(r))
+            print()
+            
         
     for col in range(n):
         if is_ssafe(board,row,col,n):
@@ -33,6 +35,6 @@ def solve(board,row,n):
             board[row][col]="."
 
 n = 4
-board = [["." for _ in range(n)] for _ in range(n)]
-
+board = [["."for _ in range(n)]for _ in range(n)]
+solve(board, 0, n)
 

@@ -1,6 +1,6 @@
 def permutations(nums, current, used):
     if len(current)==len(nums):
-        print(current)
+        print(current.copy())
         return 
     
     for i in range(len(nums)):

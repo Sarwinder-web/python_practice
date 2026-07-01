@@ -1,4 +1,4 @@
-class student:
+'''class student:
     def __init__(self,name,branch):
         self.name = name
         self.branch = branch
@@ -21,5 +21,15 @@ s1.change_branch("CSE AI/ML")
 s2.change_branch("IT Diploma")
 
 s1.show_details()
-s2.show_details()
+s2.show_details()'''
+class Person:
+    def greet(self):
+        print("Hello from Person")
+
+class Student(Person):
+    pass
+
+s = Student()
+
+s.greet()
     

@@ -1,0 +1,8 @@
+Problem	/ Choose   /	Explore /	Undo /
+Subsets	/  Take element/ 	Recurse	Pop/ 
+Permutations	/ Pick unused number/ 	Recurse	Pop + mark unused
+Combination Sum/ Pick candidate/ 	Recurse	Pop
+N-Queens/ 	Place queen	Next row/ 	Remove queen
+Sudoku	/ Place number/ Next empty cell/ 	Remove number
+Word Search  /  Move ↑ ↓ ← →
+               
